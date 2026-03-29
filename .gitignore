@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Data directories (large files, generated at runtime)
+data/
+*.lancedb
+*.lance
+
+# Knowledge graph pickle (regenerated at runtime)
+data/graphs/
+*.pkl
+
+# Cache
+data/cache/
+*.cache
+
+# Ollama / model files
+*.gguf
+*.bin
+*.ggml
+models/
+
+# Logs
+*.log
+logs/
+/tmp/
+
+# Backups created by apply_fixes.sh
+.backup_*/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter (if used for experiments)
+.ipynb_checkpoints/
+*.ipynb
+
+# NLTK / HuggingFace model cache (large, downloaded at runtime)
+nltk_data/
+~/.cache/huggingface/
+sentence_transformers/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# pyarrow / LanceDB temp files
+*.arrow
+*.parquet

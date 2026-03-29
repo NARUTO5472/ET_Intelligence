@@ -1,0 +1,65 @@
+# ============================================================
+# ET AI-Native News Platform — CPU-Optimised Requirements
+# Linux | Integrated Iris GPU | 16 GB RAM (No VRAM)
+# ============================================================
+
+# --- Web Framework & UI ---
+streamlit==1.35.0
+fastapi==0.111.0
+uvicorn==0.30.0
+httpx==0.27.0
+
+# --- LLM Orchestration (Ollama + LangChain) ---
+ollama>=0.3.0,<1
+langchain==0.2.5
+langchain-community==0.2.5
+langchain-core>=0.2.27,<0.4.0
+langchain-ollama==0.1.1
+
+# --- Vector Engine & Semantic Embeddings ---
+lancedb==0.8.2
+sentence-transformers==3.0.1
+
+# CPU-only PyTorch wheels
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.0+cpu
+torchvision==0.18.0+cpu
+
+# --- Data Ingestion ---
+feedparser==6.0.11
+newspaper3k==0.2.8
+beautifulsoup4==4.12.3
+requests==2.32.3
+lxml==5.2.2
+lxml_html_clean==0.1.1
+Pillow==10.3.0
+
+# --- Entity Extraction (CPU-optimised NER) ---
+gliner==0.2.5
+spacy==3.7.5
+
+# --- Knowledge Graph ---
+networkx==3.3
+pyvis==0.3.2
+
+# --- Data Processing ---
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.0
+
+# --- Sentiment Analysis ---
+textblob==0.18.0
+vaderSentiment==3.3.2
+
+# --- Async & Utilities ---
+apscheduler==3.10.4
+python-dotenv==1.0.1
+pydantic==2.7.4
+rich==13.7.1
+tqdm==4.66.4
+pyarrow==14.0.2
+nltk==3.8.1
+
+# --- Plotting & Visualisation ---
+plotly==5.22.0
+matplotlib==3.9.0
