@@ -1,6 +1,6 @@
 # ============================================================
 # ET AI-Native News Platform — CPU-Optimised Requirements
-# Linux | Integrated Iris GPU | 16 GB RAM (No VRAM)
+# UPGRADED: Added groq for blazing-fast inference (1200+ tok/s)
 # ============================================================
 
 # --- Web Framework & UI ---
@@ -9,7 +9,10 @@ fastapi==0.111.0
 uvicorn==0.30.0
 httpx==0.27.0
 
-# --- LLM Orchestration (Ollama + LangChain) ---
+# --- LLM: Groq (primary, free, 1200+ tok/s) ---
+groq>=0.9.0
+
+# --- LLM: Ollama + LangChain (fallback, CPU) ---
 ollama>=0.3.0,<1
 langchain==0.2.5
 langchain-community==0.2.5
@@ -34,7 +37,7 @@ lxml==5.2.2
 lxml_html_clean==0.1.1
 Pillow==10.3.0
 
-# --- Entity Extraction (CPU-optimised NER) ---
+# --- Entity Extraction ---
 gliner==0.2.5
 spacy==3.7.5
 
@@ -60,6 +63,6 @@ tqdm==4.66.4
 pyarrow==14.0.2
 nltk==3.8.1
 
-# --- Plotting & Visualisation ---
+# --- Plotting ---
 plotly==5.22.0
 matplotlib==3.9.0

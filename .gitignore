@@ -86,3 +86,5 @@ htmlcov/
 # pyarrow / LanceDB temp files
 *.arrow
 *.parquet
+
+.env
